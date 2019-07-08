@@ -1,0 +1,10 @@
+<h3>Master Detail Component</h3>
+
+<div class="master-detail-container">
+<app-paginated-list-container
+  [customListComponent]="customList"
+  (entrySelected)="entrySelected($event)">
+</app-paginated-list-container>
+
+<app-detail-view [selectedEntry]="selectedEntry"></app-detail-view>
+</div>

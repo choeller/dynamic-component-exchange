@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  border: 2px solid green;
+  padding: 10px;
+
+  .master-detail-container {
+    display: flex;
+  }
+
+  app-detail-view {
+    flex-grow: 1;
+  }
+
+}

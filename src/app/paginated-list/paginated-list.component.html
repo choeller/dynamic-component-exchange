@@ -1,0 +1,12 @@
+<table *ngIf="!customListComponent">
+  <thead>
+    <td>ID</td>
+    <td>Name</td>
+  </thead>
+  <tr *ngFor="let item of data" (click)="entrySelected.emit(item)">
+    <td>{{item.id}}</td>
+    <td>{{item.name}}</td>
+  </tr>
+</table>
+
+<div id="custom-component-container"></div>

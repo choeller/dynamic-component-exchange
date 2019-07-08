@@ -1,0 +1,7 @@
+<h3>List Container</h3>
+
+<app-paginated-list
+  [customListComponent]="customListComponent"
+  [data]="data$ | async"
+  (entrySelected)="entrySelected.emit($event)"
+></app-paginated-list>

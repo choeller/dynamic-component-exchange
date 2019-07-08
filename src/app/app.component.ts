@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {CustomListComponent} from './custom-list/custom-list.component';
+import {ComponentPortal} from '@angular/cdk/portal';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dynamic-content-tester';
+
+   customList: ComponentPortal<CustomListComponent>;
+
+  switchToCustomList() {
+    this.customList = new ComponentPortal(CustomListComponent);
+  }
+
 }
